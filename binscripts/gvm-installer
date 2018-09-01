@@ -42,10 +42,10 @@ export PATH; PATH="$GVM_DEST/$GVM_NAME/pkgsets/system/global/bin:$GOROOT/bin:$GV
 EOF
 }
 
-BRANCH=${1:-master}
+BRANCH=${1:-master-patch}
 GVM_DEST=${2:-$HOME}
 GVM_NAME="gvm"
-SRC_REPO=${SRC_REPO:-https://github.com/moovweb/gvm.git}
+SRC_REPO=${SRC_REPO:-https://github.com/hex2dec/gvm.git}
 
 [ "$GVM_DEST" = "$HOME" ] && GVM_NAME=".gvm"
 
